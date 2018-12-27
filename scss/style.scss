@@ -5,4 +5,44 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    .list {
+        .like {
+            width: 100%;
+            height: pxTorem(150px);
+            h3 {
+                height: pxTorem(30px);
+                @include box_flex;
+                @include justify(space-between);
+                .gray {
+                    color: #BFBFBF;
+                }
+            }
+            .cont {
+                width: 100%;
+                height: pxTorem(120px);
+                display: flex;
+                dl {
+                    width: 33%;
+                    @include Wrap(wrap);
+                    border: border-box;
+                    padding: pxTorem(10px);
+                }
+            }
+            .cont-tag {
+                height: pxTorem(90px);
+                overflow-x: auto;
+                dl {
+                    width: 24%;
+                    height: 100%;
+                    @include box_flex;
+                    @include direction(column);
+                    @include align(center);
+                    @include justify(center);
+                    @include flexWrap(wrap);
+                    @include sizing;
+                    padding: pxTorem(10px);
+                }
+            }
+        }
+    }
 }
