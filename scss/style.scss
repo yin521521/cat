@@ -6,3 +6,90 @@
     display: flex;
     flex-direction: column;
 }
+
+section {
+    width: 100%;
+    flex: 1;
+    padding: 0 pxTorem(10px);
+    @include sizing;
+    .list {
+        width: 100%;
+        .boutique {
+            margin-top: pxTorem(10px);
+            width: 100%;
+            .boutique_navs {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                span {
+                    font-size: pxTorem(18px);
+                }
+            }
+            dl {
+                width: 100%;
+                display: flex;
+                padding: pxTorem(10px) 0;
+                @include sizing;
+                border-bottom: thin solid #ccc;
+                dt {
+                    img {
+                        width: pxTorem(80px);
+                    }
+                }
+                dd {
+                    margin-left: pxTorem(10px);
+                    display: flex;
+                    flex-direction: column;
+                    h3 {
+                        font-size: pxTorem(18px);
+                    }
+                    >span {
+                        display: block;
+                        margin: pxTorem(5px) 0;
+                        font-size: pxTorem(15px);
+                    }
+                    p {
+                        flex: 1;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                        span {
+                            font-size: pxTorem(13px);
+                            color: #ccc;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: pxTorem(60px);
+    display: flex;
+    background: #FAFAFA;
+    dl {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        dt {
+            margin-top: pxTorem(5px);
+            img {
+                height: pxTorem(30px);
+            }
+        }
+        dd {
+            font-size: pxTorem(16px);
+        }
+        &:nth-child(3) {
+            dt {
+                img {
+                    height: pxTorem(45px);
+                }
+            }
+        }
+    }
+}
