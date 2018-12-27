@@ -12,8 +12,47 @@ section {
     flex: 1;
     padding: 0 pxTorem(10px);
     @include sizing;
+    overflow: hidden;
     .list {
         width: 100%;
+        .like {
+            width: 100%;
+            h3 {
+                @include box_flex;
+                @include justify(space-between);
+                .gray {
+                    color: #BFBFBF;
+                }
+            }
+            .cont {
+                width: 100%;
+                height: pxTorem(200px);
+                display: flex;
+                dl {
+                    width: 33%;
+                    @include flexWrap(wrap);
+                    border: border-box;
+                    padding: pxTorem(10px);
+                    @include sizing;
+                }
+            }
+            .cont-tag {
+                overflow-x: auto;
+                @include box_flex;
+                dl {
+                    width: 24%;
+                    height: 100%;
+                    @include box_flex;
+                    @include direction(column);
+                    @include align(center);
+                    @include justify(center);
+                    @include flexWrap(wrap);
+                    @include sizing;
+                    padding: pxTorem(10px);
+                    @include sizing;
+                }
+            }
+        }
         .boutique {
             margin-top: pxTorem(10px);
             width: 100%;
