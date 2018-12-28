@@ -1,10 +1,15 @@
-/*
- * @Author: yinyaoxuan 
- * @Date: 2018-12-27 20:44:05 
- * @Last Modified by: yinyaoxuan
- * @Last Modified time: 2018-12-28 07:19:23
- */
-
 @import "_mixin";
 @import "common";
 @import "reset";
+nav {
+    @include box_flex;
+    dl {
+        margin-top: pxTorem(10px);
+        @include flex;
+        @include box_flex;
+        @include direction(column);
+        dd {
+            font-size: pxTorem(14px);
+        }
+    }
+}
